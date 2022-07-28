@@ -1,0 +1,224 @@
+html {
+    background-color: #0e0e0e;
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    background-color: #0e0e0e;
+    width: 100%;
+}
+
+button {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    border-radius: 5px;
+    padding: 5px 15px;
+}
+
+/* Formatting columns to center main stack */
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+.container>div {
+    flex-grow: 1;
+}
+
+.container>div:nth-child(2) {
+    flex-grow: 1;
+    width: 800px;
+}
+
+/* Formatting each "layer" of the center stack */
+
+.layer {
+    padding: 30px 60px;
+}
+
+/* Formatting header section */
+
+.header {
+    background-color: #1F2937;
+    color: #E5E7EB;
+}
+
+/* Formatting header.menu section */
+
+.header>.menu {
+    padding: 15px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.header>.menu>img {
+    width: 25px;
+    height: 25px;
+}
+
+.header>.menu>div {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.header>.menu>div>a {
+    color: inherit;
+    padding: 0 10px;
+}
+
+.header>.menu>div>a:link,
+.header>.menu>div>a:visited {
+    text-decoration: none;
+}
+
+.header>.menu>div>a:hover,
+.header>.menu>div>a:active {
+    text-decoration: underline;
+}
+
+/* Formatting header.banner section */
+
+.header>.banner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.header>.banner>* {
+    width: 50%;
+    flex-grow: 1;
+}
+
+.header>.banner>div>h1 {
+    color: #F9FAF8;
+    font-size: 48px;
+    margin: 0;
+}
+
+.header>.banner>div>p {
+    font-size: 18px;
+}
+
+.header>.banner>div>button {
+    border-width: 0;
+}
+
+.header>.banner>div>img {
+    width: 100%;
+    height: 250px;
+}
+
+/* Formatting information section */
+
+.information {
+    background-color: #F9FAF8;
+    color: #1F2937;
+}
+
+.information>h2 {
+    text-align: center;
+    margin: 0;
+}
+
+.information>div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.information>div>.card {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.information>div>.card>* {
+    flex-grow: 1;
+}
+
+.information>div>.card>img {
+    border-width: 3px;
+    border-radius: 10px;
+    border-color: #3882F6;
+    border-style: solid;
+}
+
+.information>div>.card>p {
+    text-align: center;
+}
+
+/* Formatting quote section */
+
+.quote {
+    background-color: #E5E7EB;
+    color: #1F2937;
+}
+
+.quote>p {
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.quote>div {
+    text-align: right;
+}
+
+/* Formatting action section */
+
+.action {
+    background-color: #F9FAF8;
+    color: #1F2937;
+}
+
+.action>div {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    border-radius: 5px;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.action>div>* {
+    flex-grow: 1;
+}
+
+.action>div>div>h3 {
+    margin: 15px 0 0;
+}
+
+.action>div>div>p {
+    margin: 0 0 15px;
+}
+
+.action>div>div:nth-child(2) {
+    display: flex;
+    align-items: center;
+}
+
+.action>div>div:nth-child(2)>button {
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: #F9FAF8;
+    margin: 0 auto;
+}
+
+/* Formatting footer section */
+
+.footer {
+    background-color: #1F2937;
+    color: #E5E7EB;
+    text-align: center;
+}
